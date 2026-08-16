@@ -1,0 +1,19 @@
+<svg width="128" height="128" viewBox="0 0 128 128" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>IndustryBench</title>
+  <desc>A step response overshooting, settling, and arriving at a trusted reading.</desc>
+
+  <!-- the bench's world, shared with IndustryFlow -->
+  <circle cx="64" cy="64" r="50" fill="none" stroke="#9aa0ac" stroke-width="6"/>
+
+  <!-- the measurement: flat, a step, one overshoot, settled.
+       Gold because the reading is the accent — everything else is structure. -->
+  <path d="M 34 88 L 50 88
+           C 57 88 59 43 65 39
+           C 71 35.6 75 51 83 49.5
+           C 88 48.7 92 48 96 48"
+        fill="none" stroke="#cfa94e" stroke-width="9"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- the reading itself -->
+  <circle cx="96" cy="48" r="8" fill="#cfa94e"/>
+</svg>

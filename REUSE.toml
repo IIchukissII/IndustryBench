@@ -1,0 +1,23 @@
+version = 1
+SPDX-PackageName = "IndustryBench"
+SPDX-PackageSupplier = "The IndustryBench contributors"
+SPDX-PackageDownloadLocation = "https://github.com/IIchukissII/IndustryBench"
+
+[[annotations]]
+path = ["readme.md", "img/**"]
+SPDX-FileCopyrightText = "2026 The IndustryBench contributors"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["requirements.txt", ".gitignore"]
+SPDX-FileCopyrightText = "2026 The IndustryBench contributors"
+SPDX-License-Identifier = "AGPL-3.0-or-later"
+
+# Bundled type. Not our work and not under our licence: IBM Plex is IBM's,
+# released under the SIL Open Font License, which permits redistribution
+# inside a larger work. Shipped rather than assumed because a stack whose
+# first choice is absent renders as whatever the machine happens to have.
+[[annotations]]
+path = ["fonts/**"]
+SPDX-FileCopyrightText = "2017 IBM Corp. with Reserved Font Name \"Plex\""
+SPDX-License-Identifier = "OFL-1.1"

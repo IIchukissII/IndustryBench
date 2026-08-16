@@ -1,0 +1,48 @@
+<svg width="680" height="680" viewBox="0 0 680 680" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>IndustryBench</title>
+  <desc>Channels entering the bench from the left, a live trace settling onto its
+        reading at the centre of the same world IndustryFlow runs on.</desc>
+
+  <!-- No background. A logo with a ground baked into it can only ever sit on
+       that one ground; this one takes whatever surface it is placed on. -->
+
+  <!-- domain boundary: the bench's world, shared with IndustryFlow -->
+  <circle cx="340" cy="340" r="278" fill="none" stroke="#565C67" stroke-width="3"/>
+
+  <!-- value grid: the three strata, flattened into a scope graticule -->
+  <g fill="none" stroke="#828994">
+    <line x1="83" y1="250" x2="597" y2="250" stroke-width="1.6" opacity="0.6"/>
+    <line x1="68" y1="340" x2="612" y2="340" stroke-width="1.2" opacity="0.55" stroke-dasharray="4 10"/>
+    <line x1="83" y1="430" x2="597" y2="430" stroke-width="1.6" opacity="0.6"/>
+  </g>
+
+  <!-- channels entering the bench -->
+  <g fill="none" stroke="#828994" stroke-width="2" opacity="0.75">
+    <line x1="85" y1="250" x2="104" y2="250"/>
+    <line x1="70" y1="340" x2="104" y2="340"/>
+    <line x1="85" y1="430" x2="104" y2="430"/>
+  </g>
+
+  <!-- what has not been measured yet -->
+  <line x1="366" y1="340" x2="596" y2="340" stroke="#828994"
+        stroke-width="2" opacity="0.45" stroke-dasharray="5 12"/>
+
+  <!-- the measurement: a step response settling exactly onto the centre.
+       Clean, not noisy — the point of the bench is that the reading settles. -->
+  <path d="M 110 430 L 210 430
+           C 232 430 240 318 262 314
+           C 282 310 298 344 318 346
+           C 328 347 335 342 340 340"
+        fill="none" stroke="#9A7423" stroke-width="8"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- the reading itself: the same core IndustryFlow centres on -->
+  <circle cx="340" cy="340" r="18" fill="#9A7423"/>
+
+  <!-- channel nodes, seated on the boundary -->
+  <g fill="#E8E4D9" stroke="#565C67" stroke-width="2.5">
+    <circle cx="83" cy="250" r="7"/>
+    <circle cx="68" cy="340" r="7"/>
+    <circle cx="83" cy="430" r="7"/>
+  </g>
+</svg>
